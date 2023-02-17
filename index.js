@@ -29,3 +29,16 @@ function showDivs(n) {
     x[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " w3-white";
 }
+
+function loadDoc(tag , file) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var md = this.responseText;
+            var html = window.markdownit().render(md);
+            document.getElementById(tag).innerHTML = html;
+        }
+    };
+    xhttp.open("GET", file, true);
+    xhttp.send();
+}

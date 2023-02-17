@@ -1,5 +1,3 @@
-<!--Design a simple web page to show readme file contents with nav bar -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +6,6 @@
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
     <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
     <style>
         body {
@@ -22,42 +19,25 @@
 </head>
 <body>
 
-<div class="w3-top">
-    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <img src="Wiliot_OAIoTP.jpg" alt="logo" style="width: 10%; height: 10%;">
+<!--<div class="w3-top">-->
+<!--    <div class="w3-bar w3-white w3-wide w3-padding w3-card">-->
+<!--        <img src="Wiliot_OAIoTP.jpg" alt="logo" style=" height: 15% ; width: 15%">-->
 
-        <!-- Float links to the right. Hide them on small screens -->
-        <div class="w3-right w3-hide-small">
-            <a class="w3-bar-item w3-button" href="#about-OAI">About</a>
-            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'community.md')">Community</a>
-            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'contributing.md')">Contributing</a>
-            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'namingConvention.md')">Naming Conventions</a>
-            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'codeOfConduct.md')">Code of Conduct</a>
-            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'license.md')">License</a>
-            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'creatingReadMe.md')">Creating Read Me</a>
+<!--        &lt;!&ndash; Float links to the right. Hide them on small screens &ndash;&gt;-->
+<!--        <div class="w3-right w3-hide-small">-->
+<!--            <a class="w3-bar-item w3-button" href="#about-OAI">About</a>-->
+<!--            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'community.md')">Community</a>-->
+<!--            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'contributing.md')">Contributing</a>-->
+<!--            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'namingConvention.md')">Naming Conventions</a>-->
+<!--            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'codeOfConduct.md')">Code of Conduct</a>-->
+<!--            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'license.md')">License</a>-->
+<!--            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'creatingReadMe.md')">Creating Read Me</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<img src="Wiliot_OAIoTP.jpg" alt="logo" style=" height: 20% ; width: 20%">
 
-        </div>
-    </div>
-</div>
-
-
-//CONVERT NAV BAR TO HAMBURGER MENU ON SMALL SCREENS
-<script>
-    function myFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
-    }
-</script>
-
-
-
-
-//make the banner automatically change to next msg after 5 sec
-<div class="w3-container w3-blue w3-center w3-padding-32">
+<div class="w3-container w3-blue w3-center w3-padding-8">
     <script>
         var myIndex = 0;
         carousel();
@@ -75,15 +55,25 @@
             setTimeout(carousel, 1000);
         }
     </script>
-    <h3>Upcoming Hackathon</h3>
+    <h5>Upcoming Events: Wiliot Hackathon with Innovate for Vegas Foundation in Las Vegas starting Feb 25th </h5>
     <div class="mySlides w3-animate-fading">
 
-        <a href="https://www.hackerearth.com/challenges/hackathon/iot-hackathon-2018/" target="_blank">
-        Click here to register</a>
+        <a href="https://hubs.ly/Q01CFBqf0" target="_blank">
+            Click here to register</a>
 
     </div>
 </div>
 
+
+<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+
+    <div class="w3-bar-item w3-button w3-mobile" onclick="loadDoc('markdown-content', 'md/community.md')">Community</div>
+    <div class="w3-bar-item w3-button w3-mobile" onclick="loadDoc('markdown-content', 'md/contributing.md')">Contributing</div>
+    <div class="w3-bar-item w3-button w3-mobile" onclick="loadDoc('markdown-content', 'md/namingConvention.md')">Naming Conventions</div>
+    <div class="w3-bar-item w3-button w3-mobile" onclick="loadDoc('markdown-content', 'md/codeOfConduct.md')">Code of Conduct</div>
+    <div class="w3-bar-item w3-button w3-mobile" onclick="loadDoc('markdown-content', 'md/license.md')">License</div>
+    <div class="w3-bar-item w3-button w3-mobile" onclick="loadDoc('markdown-content', 'md/creatingReadMe.md')">Creating Read Me</div>
+</div>
 
 
 <div id="display" class="w3-content w3-padding" style="max-width:1564px">
@@ -94,24 +84,8 @@
 
 
 
-<script>
-    function loadDoc(tag , file) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var md = this.responseText;
-                var html = window.markdownit().render(md);
-                document.getElementById(tag).innerHTML = html;
-            }
-        };
-        xhttp.open("GET", file, true);
-        xhttp.send();
-    }
-</script>
 
 
 <script src="index.js"></script>
-
-
 </body>
 </html>

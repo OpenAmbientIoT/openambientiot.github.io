@@ -1,30 +1,30 @@
 # Guidelines for Creating a README.md
 
-### Keep it concise
+### 1. Keep it concise
 
 Your README file should be concise and easy to understand. Avoid using complex language and technical jargon.
 
-### Highlight the key features
+### 2. Highlight the key features
 
 The README file should provide an overview of the key features of the project, including its purpose, functionality, and benefits.
 
-### Include setup and installation instructions
+### 3. Include setup and installation instructions
 
 Make sure to include setup and installation instructions in your README file, including any dependencies or system requirements.
 
-### Provide usage examples
+### 4. Provide usage examples
 
 Including usage examples and sample code can help users understand how to use your project and what it's capable of.
 
-### Document any known issues
+### 5. Document any known issues
 
 If your project has any known issues or limitations, make sure to document them in your README file. This can help users avoid common pitfalls and understand the limitations of the software.
 
-### Include a contribution guide
+### 6. Include a contribution guide
 
 If you want to encourage others to contribute to your project, include a contribution guide in your README file. This can include information on how to submit bug reports, feature requests, and pull requests.
 
-### Use formatting to make the file easy to read
+### 7. Use formatting to make the file easy to read
 
 Use formatting such as headers, bullet points, and code blocks to make the file easy to read and navigate.
 

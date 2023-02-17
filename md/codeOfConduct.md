@@ -20,7 +20,7 @@ Respect others' privacy and security, and do not share personal or sensitive inf
 
 ### 5. Report any concerns
    
-If you witness or experience any behavior that violates this code of conduct, please report it to [Company Name] GitHub organization administrators. All reports will be kept confidential and will be taken seriously.
+If you witness or experience any behavior that violates this code of conduct, please report it to **OpenAmbientIoT** GitHub organization administrators. All reports will be kept confidential and will be taken seriously.
 
 By participating in OpenAmbientIoT GitHub organization, you agree to adhere to this code of conduct. We reserve the right to remove anyone who violates this code of conduct or engages in behavior that is harmful to the community.
 
