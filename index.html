@@ -1,162 +1,118 @@
+<!--Design a simple web page to show readme file contents with nav bar -->
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>OpenAmbientIoT</title>
+    <title>Open Ambient IoT</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
     <style>
-        /* Style for navigation tabs */
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #333;
-            color: white;
-            padding: 1rem;
+        body {
+            font-family: "Lato", sans-serif
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
+        .mySlides {
+            display: none
         }
-
-        /* Style for main content */
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-        }
-
-        h1 {
-            margin-top: 0;
-        }
-
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 1rem;
-        }
-
     </style>
 </head>
 <body>
-<nav>
-    <a href="#events">Latest Developer Events</a>
-    <a href="#repositories">Open Source Repositories</a>
-    <a href="#wiliot-repositories">Wiliot Developer Program Repositories</a>
-    <a href="#code-of-conduct">Code of Conduct</a>
-</nav>
-<main>
-    <h1>OpenAmbientIoT</h1>
 
-    <section id="events">
-        <h2>Latest Developer Events</h2>
-        <ul>
-            <li>
-                <img src="https://via.placeholder.com/400x200.png?text=Event+1+Image" alt="Event 1 Image">
-                Event 1 - <a href="https://example.com">Link to event page</a>
-            </li>
-            <li>
-                <img src="https://via.placeholder.com/400x200.png?text=Event+2+Image" alt="Event 2 Image">
-                Event 2 - <a href="https://example.com">Link to event page</a>
-            </li>
-            <li>
-                <img src="https://via.placeholder.com/400x200.png?text=Event+3+Image" alt="Event 3 Image">
-                Event 3 - <a href="https://example.com">Link to event page</a>
-            </li>
-        </ul>
-    </section>
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a class="w3-bar-item w3-button" href="index.html"><b>Open</b> Ambient IoT</a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+            <a class="w3-bar-item w3-button" href="#about-OAI">About</a>
+            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'community.md')">Community</a>
+            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'contributing.md')">Contributing</a>
+            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'namingConvention.md')">Naming Conventions</a>
+            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'codeOfConduct.md')">Code of Conduct</a>
+            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'license.md')">License</a>
+            <a class="w3-bar-item w3-button" href="#markdown-content" onclick="loadDoc('markdown-content', 'creatingReadMe.md')">Creating Read Me</a>
 
-    <section id="repositories">
-        <h2>Open Source Repositories</h2>
-        <ul>
-            <li>
-                <img src="https://via.placeholder.com/400x200.png?text=Repository+1+Image" alt="Repository 1 Image">
-                Repository 1 - <a href="https://github.com/OpenAmbientIoT/repository-1">Link to repository page</a>
-            </li>
-            <li>
-                <img src="https://via.placeholder.com/400x200.png?text=Repository+2+Image" alt="Repository 2 Image">
-                Repository 2 - <a href="https://github.com/OpenAmbientIoT/repository-2">Link to repository page</a>
-            </li>
-            <li>
-                <img src="https://via.placeholder.com/400x200.png?text=Repository+3+Image" alt="Repository 3 Image">
-                Repository 3 - <a href="https://github.com/OpenAmbientIoT/repository-3">Link to repository page</a>
-            </li>
-        </ul>
-    </section>
-
-    <section id="wiliot-repositories">
-        <h2>Wiliot Developer Program Repositories</h2>
-        <ul>
-            <li>
-                <img src="https://via.placeholder.com/400x200.png?text=Repository+1+Image" alt="Repository 1 Image">
-                Repository 1 - <a href="https://example.com">Link to repository page</a>
-            </li>
-<li>
-                <img src="https://via.placeholder.com/400x200.png?text=Repository+2+Image" alt="Repository 2 Image">
-                Repository 2 - <a href="https://example.com">Link to repository page</a>
-            </li>
-            <li>
-                <img src="https://via.placeholder.com/400x200.png?text=Repository+3+Image" alt="Repository 3 Image">
-                Repository 3 - <a href="https://example.com">Link to repository page</a>
-            </li>
-        </ul>
-
-    </section>
-
-    <section id="code-of-conduct">
-        <h2>Code of Conduct</h2>
-        <p>
-            All participants of OpenAmbientIoT are expected to abide by our Code of Conduct, both online and during in-person events that are hosted and/or associated with OpenAmbientIoT.
-        </p>
-        <p>
-            The OpenAmbientIoT Code of Conduct is adapted from the <a href="https://www.contributor-covenant.org/">Contributor Covenant</a>, version 1.4, available at <a href="https://www.contributor-covenant.org/version/1/4/code-of-conduct.html">https://www.contributor-covenant.org/version/1/4/code-of-conduct.html</a>
-        </p>
-
-        <h3>Our Pledge</h3>
-        XYZ
-
-        <h3>Our Standards</h3>
-
-        <h4>Examples of behavior that contributes to creating a positive environment include:</h4>
-
-        <ul>
-            <li>XYZ</li>
-            <li>XYZ</li>
-            <li>XYZ</li>
-        </ul>
-
-        <h4>Examples of unacceptable behavior by participants include:</h4>
-
-        <ul>
-            <li>XYZ</li>
-            <li>XYZ</li>
-            <li>XYZ</li>
-
-        </ul>
+        </div>
+    </div>
+</div>
 
 
-        <h3>Our Responsibilities</h3>
+//CONVERT NAV BAR TO HAMBURGER MENU ON SMALL SCREENS
+<script>
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
 
-        <p>XYZ</p>
 
-        <h3>Scope</h3>
 
-        <p>XYZ</p>
 
-    </section>
 
-</main>
+
+//make the banner automatically change to next msg after 5 sec
+<div class="w3-container w3-blue w3-center w3-padding-32">
+    <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 1000);
+        }
+    </script>
+    <h3>Upcoming Hackathon</h3>
+    <div class="mySlides w3-animate-fading">
+
+        <a href="https://www.hackerearth.com/challenges/hackathon/iot-hackathon-2018/" target="_blank">
+        Click here to register</a>
+
+    </div>
+</div>
+
+
+
+<div id="display" class="w3-content w3-padding" style="max-width:1564px">
+    <div class="w3-container w3-padding-32" id="markdown-content">
+    </div>
+</div>
+
+
+
+
+<script>
+    function loadDoc(tag , file) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var md = this.responseText;
+                var html = window.markdownit().render(md);
+                document.getElementById(tag).innerHTML = html;
+            }
+        };
+        xhttp.open("GET", file, true);
+        xhttp.send();
+    }
+</script>
+
+
+<script src="index.js"></script>
+
+
 </body>
 </html>
-
-
-
-
