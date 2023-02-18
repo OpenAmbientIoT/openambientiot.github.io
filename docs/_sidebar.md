@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-* [Home](/)
+* [Home](/docs)
 * Guide
 * About Wiliot
 * Webhooks
