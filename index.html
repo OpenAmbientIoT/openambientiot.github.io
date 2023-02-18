@@ -19,6 +19,14 @@
 </head>
 <body>
 
+
+<script>
+    window.onload = function () {
+        loadDoc('markdown-content', 'md/home.md');
+    };
+</script>
+
+
 <!--<div class="w3-top">-->
 <!--    <div class="w3-bar w3-white w3-wide w3-padding w3-card">-->
 <!--        <img src="Wiliot_OAIoTP.jpg" alt="logo" style=" height: 15% ; width: 15%">-->
@@ -35,7 +43,7 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</div>-->
-<img src="Wiliot_OAIoTP.jpg" alt="logo" style=" height: 20% ; width: 20% ; padding-top: 10px; padding-bottom: 10px ;padding-left: 30px">
+<img src="Wiliot_OAIoTP.jpg" alt="logo" style=" height: 20% ; width: 20% ; padding-top: 10px; padding-bottom: 10px ;padding-left: 30px" onclick="loadDoc('markdown-content', 'md/home.md')" >
 
 <div class="w3-container w3-blue w3-center w3-padding-8">
     <script>
@@ -66,7 +74,7 @@
 
 
 <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-
+    <div class="w3-bar-item w3-button w3-mobile" onclick="loadDoc('markdown-content', 'md/home.md')">Home</div>
     <div class="w3-bar-item w3-button w3-mobile" onclick="loadDoc('markdown-content', 'md/community.md')">Community</div>
     <div class="w3-bar-item w3-button w3-mobile" onclick="loadDoc('markdown-content', 'md/contributing.md')">Contributing</div>
     <div class="w3-bar-item w3-button w3-mobile" onclick="loadDoc('markdown-content', 'md/namingConvention.md')">Naming Conventions</div>
