@@ -4,7 +4,7 @@ Welcome to the Wiliot Developer Community! Our community is a place for develope
 ### Joining the Community
 To join the Wiliot Developer Community, please follow these steps:
 
-1. Visit our Discord server at https://discord.com/invite/MuKaDbAGKu
+1. Visit Wiliot Developer Community Discord server here: https://discord.com/invite/MuKaDbAGKu
 2. Click the "Join Server" button to create an account and join the server.
 3. Once you have joined the server, introduce yourself in the #introductions channel and tell us a bit about your experience and interests.
 
