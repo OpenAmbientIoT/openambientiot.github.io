@@ -1,6 +1,6 @@
 # LICENSE
 
-## Wiliot-Specific Projects
+### Wiliot-Specific Projects
 
 For all Wiliot-specific projects, we recommend using the `MIT` or `ISC` license. These licenses are permissive and allow for the software to be used, modified, and distributed with few restrictions.
 
@@ -8,7 +8,7 @@ The MIT license is a widely-used and well-understood license that allows for bot
 
 When using the MIT or ISC license for a Wiliot-specific project, please include the license text at the beginning of your project's source code.
 
-## OpenAmbientIoT Open Source Project
+### OpenAmbientIoT Open Source Project
 
 For the openambientiot open source project, we encourage developers to choose an appropriate license based on the needs of their project. There are many different types of licenses available, ranging from permissive to restrictive, and it's important to choose a license that aligns with the goals and values of your project.
 
@@ -31,6 +31,6 @@ By carefully considering these factors and choosing an appropriate license, you 
 
 Please include the license text at the beginning of your project's source code, along with any other attribution or copyright notices that are required by the license.
 
-## Conclusion
 
-Choosing the right license is an important step in creating and sharing open source software. By following these guidelines and carefully considering the needs of your project, you can help ensure that your software is used and shared in a way that aligns with your goals and values.
+### Choosing a License
+**Choosing the right license is an important step in creating and sharing open source software. By following these guidelines and carefully considering the needs of your project, you can help ensure that your software is used and shared in a way that aligns with your goals and values.**
