@@ -1,4 +1,4 @@
-### General Guidelines for naming OpenAmbientIoT Open Source Projects
+## General Guidelines for naming OpenAmbientIoT Open Source Projects
 
 When naming open source projects, it's important to choose a name that is descriptive, concise, and easy to remember. Here are some general guidelines to follow:
 

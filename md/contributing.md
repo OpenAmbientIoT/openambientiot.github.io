@@ -1,4 +1,4 @@
-# Contributing to OpenAmbientIot GitHub Organization
+## Contributing to OpenAmbientIot GitHub Organization
 
 We welcome and appreciate contributions from the community! 
 
